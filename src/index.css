@@ -1,4 +1,5 @@
-@import url(//db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold);
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Serif&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap");
 * {
   margin: 0;
@@ -8,7 +9,7 @@
 }
 
 body {
-  font-family: "Druk Wide Bold", sans-serif;
+  font-family: "Archivo Black", sans-serif;
   background-color: black;
   color: white;
 }
