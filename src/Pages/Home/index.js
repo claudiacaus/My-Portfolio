@@ -18,6 +18,7 @@ import movieTime from "../../images/movie.png";
 import weatherCode from "../../images/weather.png";
 import vanGoghWorld from "../../images/vangogh.png";
 import laptop from "../../images/img2.jpg";
+import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Home = () => {
   const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
@@ -133,6 +134,51 @@ const Home = () => {
             </p>
           </div>
         </Animator>
+      </ScrollPage>
+
+      {/*  section={4} */}
+
+      <ScrollPage page={4}>
+        <Animator animation={ZoomInScrollOut}>
+          <div className="section-title contact">Contact </div>
+        </Animator>
+      </ScrollPage>
+
+      <ScrollPage page={5}>
+        <div
+          style={{
+            display: "flex",
+
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100%",
+          }}
+        >
+          <a
+            href="https://www.linkedin.com/in/claudiadewindt"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin style={{ fontSize: "60px", marginRight: "80px" }} />
+          </a>
+          <a
+            href="https://github.com/claudiadewindt"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <FaGithubSquare style={{ fontSize: "60px", marginRight: "80px" }} />
+          </a>
+          <a
+            href="mailto:caucrah@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Email"
+          >
+            <FaEnvelope style={{ fontSize: "60px" }} />
+          </a>
+        </div>
       </ScrollPage>
     </ScrollContainer>
   );
