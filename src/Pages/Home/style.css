@@ -88,16 +88,20 @@
   justify-content: space-around;
   align-items: center;
   width: 95vw;
+  height: 100vh;
   padding: 15px 100px;
 }
 
 .portfolio-card {
   right: 0;
-  padding: 15px;
+  padding: 10px;
   cursor: pointer;
   position: relative;
   min-width: 330px;
   max-width: 600px;
+  @media screen and (max-width: 768px) {
+    padding: 5px;
+  }
 }
 
 .portfolio-title {

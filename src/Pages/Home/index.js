@@ -10,6 +10,7 @@ import {
   Sticky,
   StickyIn,
   ZoomIn,
+  MoveIn,
 } from "react-scroll-motion";
 import "./style.css";
 import headerImage from "../../images/img1.jpg";
@@ -154,30 +155,34 @@ const Home = () => {
             height: "100%",
           }}
         >
-          <a
-            href="https://www.linkedin.com/in/claudiadewindt"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <FaLinkedin style={{ fontSize: "60px", marginRight: "80px" }} />
-          </a>
-          <a
-            href="https://github.com/claudiadewindt"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-          >
-            <FaGithubSquare style={{ fontSize: "60px", marginRight: "80px" }} />
-          </a>
-          <a
-            href="mailto:caucrah@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Email"
-          >
-            <FaEnvelope style={{ fontSize: "60px" }} />
-          </a>
+          <Animator animation={MoveIn(-1000, 0)}>
+            <a
+              href="https://www.linkedin.com/in/claudiadewindt"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin style={{ fontSize: "60px", marginRight: "80px" }} />
+            </a>
+            <a
+              href="https://github.com/claudiadewindt"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <FaGithubSquare
+                style={{ fontSize: "60px", marginRight: "80px" }}
+              />
+            </a>
+            <a
+              href="mailto:caucrah@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Email"
+            >
+              <FaEnvelope style={{ fontSize: "60px" }} />
+            </a>
+          </Animator>
         </div>
       </ScrollPage>
     </ScrollContainer>
