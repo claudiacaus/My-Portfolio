@@ -6,8 +6,6 @@ import {
   batch,
   Fade,
   FadeIn,
-  Move,
-  MoveIn,
   MoveOut,
   Sticky,
   StickyIn,
