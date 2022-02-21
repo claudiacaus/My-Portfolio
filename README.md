@@ -4,7 +4,7 @@ React project with, Smooth Scroll, CSS and Javascript animations.
 
 ## Demo :computer:
 
-Online Deployment of this project is available at https://claudia-portfolio.netlify.app/
+Online Deployment of this project is available at https://claudiaportfolio.netlify.app/
 
 
 ![Macbook](https://user-images.githubusercontent.com/55986532/154958423-06d1577f-1241-4f9b-8092-d549438f3c8a.png)
