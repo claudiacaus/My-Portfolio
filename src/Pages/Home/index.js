@@ -139,13 +139,13 @@ const Home = () => {
 
       {/*  section={4} */}
 
-      <ScrollPage page={4}>
+      <ScrollPage page={5}>
         <Animator animation={ZoomInScrollOut}>
           <div className="section-title contact">Contact </div>
         </Animator>
       </ScrollPage>
 
-      <ScrollPage page={5}>
+      <ScrollPage page={6}>
         <div
           style={{
             display: "flex",
@@ -155,7 +155,7 @@ const Home = () => {
             height: "100%",
           }}
         >
-          <Animator animation={MoveIn(-1000, 0)}>
+          <Animator animation={MoveIn(1000, 0)}>
             <a
               href="https://www.linkedin.com/in/claudiadewindt"
               target="_blank"
@@ -164,6 +164,8 @@ const Home = () => {
             >
               <FaLinkedin style={{ fontSize: "60px", marginRight: "80px" }} />
             </a>
+          </Animator>
+          <Animator animation={MoveIn(10000, 0)}>
             <a
               href="https://github.com/claudiadewindt"
               target="_blank"
@@ -174,6 +176,8 @@ const Home = () => {
                 style={{ fontSize: "60px", marginRight: "80px" }}
               />
             </a>
+          </Animator>
+          <Animator animation={MoveIn(-1000, 0)}>
             <a
               href="mailto:caucrah@gmail.com"
               target="_blank"
