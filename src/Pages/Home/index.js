@@ -19,6 +19,7 @@ import strolly from "../../images/strolly.png";
 import movieTime from "../../images/movie.png";
 import weatherCode from "../../images/weather.png";
 import vanGoghWorld from "../../images/vangogh.png";
+import laptop from "../../images/img2.jpg";
 
 const Home = () => {
   const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
@@ -74,11 +75,11 @@ const Home = () => {
         </Animator>
       </ScrollPage>
 
-      {/*  page={2} */}
+      {/*  section={2} */}
 
       <ScrollPage page={1}>
         <Animator animation={ZoomInScrollOut}>
-          <div className="section-title">Portfolio</div>
+          <div className="section-title">Projects</div>
         </Animator>
       </ScrollPage>
 
@@ -104,6 +105,34 @@ const Home = () => {
                 </a>
               );
             })}
+          </div>
+        </Animator>
+      </ScrollPage>
+
+      {/*  section={3} */}
+
+      <ScrollPage page={3}>
+        <Animator animation={ZoomInScrollOut}>
+          <div className="section-title about">About me</div>
+        </Animator>
+      </ScrollPage>
+
+      <ScrollPage page={4}>
+        <Animator animation={batch(Fade(), Sticky(), MoveOut(-1000, -400))}>
+          <div className="background-image-container">
+            <img src={laptop} alt="laptop" />
+            <div className="block-background"></div>
+          </div>
+        </Animator>
+        <Animator animation={batch(Fade(), Sticky(), MoveOut(1000, 500))}>
+          <div className="details">
+            <h2 className="greeting">Hello</h2>
+            <p className="bio">
+              I am a Full Stack Web Developer with a passion for building web
+              applications. I recently graduated from the HackYourFuture
+              Bootcamp and I am fascinated by the creative part of web
+              development.
+            </p>
           </div>
         </Animator>
       </ScrollPage>
