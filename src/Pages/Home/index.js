@@ -17,10 +17,8 @@ import headerImage from "../../images/img1.jpg";
 import strolly from "../../images/strolly.png";
 import movieTime from "../../images/movie.png";
 import weatherCode from "../../images/weather.png";
-import vanGoghWorld from "../../images/vangogh.png";
 import laptop from "../../images/img2.jpg";
 import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
-
 const Home = () => {
   const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
 
@@ -40,11 +38,6 @@ const Home = () => {
       link: "https://claudiadewindt.github.io/Weather-code/",
       imageSrc: weatherCode,
     },
-    {
-      name: "Van Gogh's World",
-      link: "https://codepen.io/claudia-cau/full/YzZPvjj",
-      imageSrc: vanGoghWorld,
-    },
   ];
 
   return (
@@ -61,11 +54,6 @@ const Home = () => {
             <h2 className="first">Claudia de Windt</h2>
           </div>
         </Animator>
-        {/* <Animator animation={batch(FadeIn(), Sticky(), MoveOut(, 0))}>
-          <div className="name">
-            <h2 lassName="last">Windt</h2>
-          </div>
-        </Animator> */}
 
         <Animator animation={batch(FadeIn(), Sticky(), MoveOut(-100, 100))}>
           <div className="position">
