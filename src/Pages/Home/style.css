@@ -39,7 +39,7 @@
   justify-content: center;
   align-items: center;
   font-family: "Roboto ", sans-serif;
-  margin-top: 260px;
+  margin-top: 250px;
   width: clamp(280px, 25vw, 450px);
 }
 
@@ -47,7 +47,7 @@
   width: clamp(30px, 3vw, 60px);
   height: 2px;
   background-color: white;
-  margin-right: 20px;
+  margin-right: 10px;
   border-radius: 10px;
 }
 
@@ -88,7 +88,7 @@
   justify-content: space-around;
   align-items: center;
   width: 95vw;
-  height: 100vh;
+  max-height: 100vh;
   padding: 15px 100px;
 }
 
@@ -98,7 +98,7 @@
   cursor: pointer;
   position: relative;
   min-width: 330px;
-  max-width: 600px;
+  max-width: 500px;
   @media screen and (max-width: 768px) {
     padding: 5px;
   }
