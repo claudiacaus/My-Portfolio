@@ -1,6 +1,6 @@
 # Claudia's Portfolio
 
-React project with, Smooth Scroll, CSS and Javascript animations.
+React project with Smooth Scroll, CSS and Javascript animations.
 
 ## Demo :computer:
 
